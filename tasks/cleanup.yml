@@ -1,0 +1,7 @@
+---
+- name: cleanup files
+  file:
+    path: /tmp/autoMySQLbackup
+    state: absent
+  tags:
+    - automysqlbackup
